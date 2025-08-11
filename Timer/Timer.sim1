@@ -1,0 +1,59 @@
+<circuit version="1.1.0-SR1" rev="" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="Subcircuit" CircId="4bit_clock_cc-14" mainComp="false" Show_id="true" Show_Val="false" Pos="-24,-196" rotation="0" hflip="1" vflip="1" label="4bit_clock_cc-14" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="MCU" CircId="p16F877-15" mainComp="false" Show_id="true" Show_Val="false" Pos="-76,-76" rotation="0" hflip="1" vflip="1" label="p16F877-15" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="4 MHz" Program="Timer.X.production.hex" Auto_Load="true" saveEepr="true" Clk_Out="false" MainMcu="true" SerialMon="-1" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-20" mainComp="false" Show_id="false" Show_Val="false" Pos="56,28" rotation="-90" hflip="1" vflip="1" label="Fixed Voltage-20" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Voltage="5 V" Out="true" />
+
+<item itemtype="Ground" CircId="Ground-21" mainComp="false" Show_id="false" Show_Val="false" Pos="64,-64" rotation="0" hflip="1" vflip="1" label="Ground-21" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-22" mainComp="false" Show_id="false" Show_Val="false" Pos="-228,-156" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-22" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Voltage="5 V" Out="true" />
+
+<item itemtype="Resistor" CircId="Resistor-23" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-180,-156" rotation="0" hflip="1" vflip="1" label="Resistor-23" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="10 kΩ" />
+
+<item itemtype="Push" CircId="Push-24" mainComp="false" Show_id="false" Show_Val="false" Pos="-180,-100" rotation="0" hflip="1" vflip="1" label="Push-24" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" Poles="1" />
+
+<item itemtype="Ground" CircId="Ground-25" mainComp="false" Show_id="false" Show_Val="false" Pos="-228,-84" rotation="0" hflip="1" vflip="1" label="Ground-25" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Node" CircId="Node-26" mainComp="false" Pos="-144,-100" />
+
+<item itemtype="Connector" uid="Connector-1" startpinid="p16F877-15-PORTB0" endpinid="4bit_clock_cc-14-1" pointList="-20,-12,88,-12,88,-140" />
+
+<item itemtype="Connector" uid="Connector-2" startpinid="p16F877-15-PORTB1" endpinid="4bit_clock_cc-14-2" pointList="-20,-20,96,-20,96,-140" />
+
+<item itemtype="Connector" uid="Connector-3" startpinid="p16F877-15-PORTB2" endpinid="4bit_clock_cc-14-3" pointList="-20,-28,104,-28,104,-140" />
+
+<item itemtype="Connector" uid="Connector-4" startpinid="p16F877-15-PORTB3" endpinid="4bit_clock_cc-14-4" pointList="-20,-36,112,-36,112,-140" />
+
+<item itemtype="Connector" uid="Connector-21" startpinid="Fixed Voltage-20-outnod" endpinid="4bit_clock_cc-14-x" pointList="56,12,56,-140" />
+
+<item itemtype="Connector" uid="Connector-22" startpinid="4bit_clock_cc-14-y" endpinid="Ground-21-Gnd" pointList="64,-140,64,-80" />
+
+<item itemtype="Connector" uid="Connector-23" startpinid="Ground-25-Gnd" endpinid="Push-24-pinP0" pointList="-228,-100,-196,-100" />
+
+<item itemtype="Connector" uid="Connector-24" startpinid="Fixed Voltage-22-outnod" endpinid="Resistor-23-lPin" pointList="-212,-156,-196,-156" />
+
+<item itemtype="Connector" uid="Connector-26" startpinid="Node-26-1" endpinid="p16F877-15-MCLR" pointList="-144,-100,-144,-68,-84,-68" />
+
+<item itemtype="Connector" uid="Connector-27" startpinid="Resistor-23-rPin" endpinid="Node-26-0" pointList="-164,-156,-144,-156,-144,-100" />
+
+<item itemtype="Connector" uid="Connector-28" startpinid="Node-26-2" endpinid="Push-24-switch0pinN" pointList="-144,-100,-164,-100" />
+
+<item itemtype="Connector" uid="Connector-213" startpinid="p16F877-15-PORTD0" endpinid="4bit_clock_cc-14-a" pointList="-84,76,-96,76,-96,-108,-16,-108,-16,-140" />
+
+<item itemtype="Connector" uid="Connector-214" startpinid="p16F877-15-PORTD1" endpinid="4bit_clock_cc-14-b" pointList="-84,84,-108,84,-108,-116,-8,-116,-8,-140" />
+
+<item itemtype="Connector" uid="Connector-215" startpinid="4bit_clock_cc-14-c" endpinid="p16F877-15-PORTD2" pointList="0,-140,0,84,-20,84" />
+
+<item itemtype="Connector" uid="Connector-216" startpinid="p16F877-15-PORTD3" endpinid="4bit_clock_cc-14-d" pointList="-20,76,8,76,8,-140" />
+
+<item itemtype="Connector" uid="Connector-217" startpinid="p16F877-15-PORTD4" endpinid="4bit_clock_cc-14-e" pointList="-20,36,16,36,16,-140" />
+
+<item itemtype="Connector" uid="Connector-218" startpinid="p16F877-15-PORTD5" endpinid="4bit_clock_cc-14-f" pointList="-20,28,24,28,24,-140" />
+
+<item itemtype="Connector" uid="Connector-219" startpinid="p16F877-15-PORTD6" endpinid="4bit_clock_cc-14-g" pointList="-20,20,32,20,32,-140" />
+
+<item itemtype="Connector" uid="Connector-220" startpinid="p16F877-15-PORTD7" endpinid="4bit_clock_cc-14-h" pointList="-20,12,40,12,40,-140" />
+
+</circuit>
